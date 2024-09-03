@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title id = "Home" >NOVA NET SOLUTIONS</title>
+	<head id="header-section">
+		<title >NOVA NET SOLUTIONS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -158,7 +158,7 @@
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" id="get-started-button"/></div>
 
 </div>
 							</div>
@@ -187,6 +187,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<script>
+  document.getElementById('get-started-button').addEventListener('click', function() {
+    document.getElementById('header-section').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
 
 	</body>
 </html>
